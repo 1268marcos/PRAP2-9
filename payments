@@ -1,0 +1,47 @@
+public class Payments {
+
+	private String pCreationDate;
+	private String pDescription;
+	private String pPlace;
+	private double pAmount;
+	
+	public Payments(String creationDate, String description, String place, double amount) {
+        pCreationDate = creationDate;
+        pDescription = description;
+        pPlace = place;
+        pAmount = amount;
+    }
+
+	public String getCreationDate() {
+		return pCreationDate;
+	}
+
+	public void setCreationDate(String pCreationDate) {
+		this.pCreationDate = pCreationDate;
+	}
+
+	public String getDescription() {
+		return pDescription;
+	}
+
+	public void setDescription(String pDescription) {
+		this.pDescription = pDescription;
+	}
+
+	public String getPlace() {
+		return pPlace;
+	}
+
+	public void setPlace(String pPlace) {
+		this.pPlace = pPlace;
+	}
+
+	public double getAmount() {
+		return pAmount;
+	}
+
+	public void setAmount(double pAmount) {
+		this.pAmount = pAmount;
+	}
+	
+}
