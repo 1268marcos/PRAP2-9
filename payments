@@ -1,11 +1,19 @@
-public class Payments {
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "payments")
+
+public class Pay {
 
 	private String pCreationDate;
 	private String pDescription;
 	private String pPlace;
 	private double pAmount;
 	
-	public Payments(String creationDate, String description, String place, double amount) {
+	public Pay(String creationDate, String description, String place, double amount) {
         pCreationDate = creationDate;
         pDescription = description;
         pPlace = place;
